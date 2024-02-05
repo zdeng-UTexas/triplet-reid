@@ -44,6 +44,8 @@ Next, create a file (`files.txt`) which contains the full path to the image file
 /path/to/file1.png
 /path/to/file2.jpg
 ```
+Here is the [link](https://docs.google.com/presentation/d/16OdkwWoe8OqKFpsHDcwLpvSu4Wx-mCZsNxkjkjrLEL8/edit?usp=sharing) to the terrain images used in this work.
+
 
 Finally, run the `trinet_embed.py` script, passing both the above file and the pretrained model file you want to use, like so:
 
