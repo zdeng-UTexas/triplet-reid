@@ -1,0 +1,6 @@
+/home/dengzy/triplet-reid/test/grass_1.jpg
+/home/dengzy/triplet-reid/test/grass_2.jpg
+/home/dengzy/triplet-reid/test/grass_3.jpg
+/home/dengzy/triplet-reid/test/road_1.jpg
+/home/dengzy/triplet-reid/test/road_2.jpg
+/home/dengzy/triplet-reid/test/road_3.jpg
