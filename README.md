@@ -215,6 +215,13 @@ python embed.py \
 The embeddings will be written into the HDF5 file at `~/experiments/my_experiment/test_embeddings.h5` as dataset `embs`.
 Most relevant settings are automatically loaded from the experiment's `args.json` file, but some can be overruled on the commandline.
 
+```
+python3 embed.py \
+    --experiment_root /home/dengzy/AEROPlan_Experiment/triplet-reid_EER \
+    --dataset /home/dengzy/AEROPlan_Dataset/DJI_0455_EER_images.csv \
+    --filename DJI_0455_EER_images_query_embeddings.h5
+```
+
 If the training was performed using data augmentation (highly recommended),
 one can invest a some more time in the embedding step in order to compute augmented embeddings,
 which are usually more robust and perform better in downstream tasks.
