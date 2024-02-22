@@ -25,9 +25,13 @@ If you use any of the provided code, please cite:
 ```bash
 conda create --name triplet-reid python=3.7
 conda activate triplet-reid
-pip install opencv-python
-pip install tensorflow==1.14.0
 
+pip install opencv-python
+pip install theano
+pip install lasagne
+pip install --upgrade https://github.com/Lasagne/Lasagne/archive/master.zip
+
+pip install tensorflow==1.14.0
 pip install protobuf==3.20.*
 pip install gast==0.2.2
 ```
