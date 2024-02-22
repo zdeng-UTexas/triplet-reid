@@ -21,6 +21,13 @@ If you use any of the provided code, please cite:
 }
 ```
 
+# Installation
+```bash
+conda create --name triplet-reid python=3.8
+conda activate triplet-reid
+pip install tensorflow
+```
+
 
 # Pretrained TensorFlow models
 
