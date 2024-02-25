@@ -19,6 +19,11 @@ import loss
 from nets import NET_CHOICES
 from heads import HEAD_CHOICES
 
+import logging
+tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)  # Hide TF warnings
+logger = logging.getLogger('tensorflow')
+logger.setLevel(logging.ERROR)
+
 
 parser = ArgumentParser(description='Train a ReID network.')
 
