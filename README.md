@@ -21,6 +21,21 @@ If you use any of the provided code, please cite:
 }
 ```
 
+# Installation
+```bash
+conda create --name triplet-reid python=3.7
+conda activate triplet-reid
+
+pip install opencv-python
+pip install theano
+pip install lasagne
+pip install --upgrade https://github.com/Lasagne/Lasagne/archive/master.zip
+
+pip install tensorflow==1.14.0
+pip install protobuf==3.20.*
+pip install gast==0.2.2
+```
+
 
 # Pretrained TensorFlow models
 
@@ -44,6 +59,8 @@ Next, create a file (`files.txt`) which contains the full path to the image file
 /path/to/file1.png
 /path/to/file2.jpg
 ```
+Here is the [link](https://docs.google.com/presentation/d/16OdkwWoe8OqKFpsHDcwLpvSu4Wx-mCZsNxkjkjrLEL8/edit?usp=sharing) to the terrain images used in this work.
+
 
 Finally, run the `trinet_embed.py` script, passing both the above file and the pretrained model file you want to use, like so:
 
@@ -202,6 +219,13 @@ python embed.py \
 
 The embeddings will be written into the HDF5 file at `~/experiments/my_experiment/test_embeddings.h5` as dataset `embs`.
 Most relevant settings are automatically loaded from the experiment's `args.json` file, but some can be overruled on the commandline.
+
+```
+python3 embed.py \
+    --experiment_root /home/dengzy/AEROPlan_Experiment/triplet-reid_EER \
+    --dataset /home/dengzy/AEROPlan_Dataset/DJI_0455_EER_images.csv \
+    --filename DJI_0455_EER_images_query_embeddings.h5
+```
 
 If the training was performed using data augmentation (highly recommended),
 one can invest a some more time in the embedding step in order to compute augmented embeddings,
