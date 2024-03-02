@@ -6,7 +6,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Replace 'your_file.csv' with the path to your CSV file
-file_path = '/home/dengzy/triplet-reid/embeddings.csv'
+file_path = '/home/dengzy/triplet-reid/embeddings_old.csv'
+# file_path = '/home/dengzy/triplet-reid/embeddings.csv'
 
 # Read the CSV file, assuming the first row is data, not header
 df = pd.read_csv(file_path, header=None)
