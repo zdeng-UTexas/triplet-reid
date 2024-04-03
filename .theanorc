@@ -1,0 +1,9 @@
+[global]
+floatX=float32
+device=cuda*
+
+[cuda]
+root = /usr/local/cuda-11.8
+
+[lib]
+cnmem = 1
