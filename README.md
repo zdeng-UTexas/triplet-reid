@@ -40,6 +40,20 @@ pip install gast==0.2.2
 pip install opencv-python && pip install theano && pip install lasagne && pip install tensorflow==1.14.0 && pip install protobuf==3.20.* && pip install gast==0.2.2 && pip install --upgrade https://github.com/Lasagne/Lasagne/archive/master.zip
 ```
 
+```bash
+conda create --name aeroplan python=3.8
+conda activate aeroplan
+
+pip install opencv-python
+pip install theano
+pip install lasagne
+pip install --upgrade https://github.com/Lasagne/Lasagne/archive/master.zip
+
+pip install tensorflow==2.12.0
+pip install protobuf==3.20.*
+pip install gast==0.2.2
+```
+
 
 # Pretrained TensorFlow models
 
